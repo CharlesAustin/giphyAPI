@@ -2,7 +2,7 @@ const fetchGif = async () => {
     const gifContainer = document.querySelector(".gifContainer");
     const myKey = "Ik2y6SA8vp6BDUyFHAH8wOjGYHI8hptc";
     const url = `https://api.giphy.com/v1/gifs/random?api_key=${myKey}`;
-    gifContainer.innerHTML = "";
+    gifContainer.textContent = "";
     gifContainer.setAttribute("aria-busy", true);
 
     try {
